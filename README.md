@@ -112,6 +112,8 @@
 #### E) 훈련 | weight 파일 생성
 #### F)  테스트 | validation 파일로 정확도 확인
 
+<br/>
+
 ### 3_3. 결과 
 
 <img src="https://user-images.githubusercontent.com/62331803/91872210-91a40200-ecb2-11ea-8d25-681ea652ca7f.png" width="50%">

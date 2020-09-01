@@ -64,17 +64,13 @@
   </details>
     
   - obj.data | <br/>
-
    <details>
 	    <summary>보기</summary>  
-	
   </details>
 
   - v3-all.cfg | 구축할 모델의 layer 세부설정 <br/>
-
    <details>
 	    <summary>보기</summary>  
-
 	- line 1 [net layer] `max batches (반복횟수)`  : 사용할 class개수 * 2000
 	- line 1 [net layer] `steps` : max batches의 0.8배, max batches의 0.9배
 	- line 123, 167 [Convolutional layer] `filters` : (사용할 class개수 + 5) * 3

@@ -1,11 +1,15 @@
 # 딥러닝 프로젝트 | 시선 (Seesun, 視先) 
 ### 목차
 
-#### [1. 데이터 전처리](#1-데이터-전처리) <br/>
+#### [ 1. 데이터 전처리](#1-데이터-전처리) <br/>
 
-#### [ 2. Weight 파일 생성을 위한 기본설정](#2-Weight-파일-생성을-위한-기본설정)<br/>
+#### [ 2. 분류한 데이터별로 학습시키기](#2-분류한-데이터별로-학습시키기)<br/>
 
-#### [ 3. Colab에서 학습파일 생성하기](#3-Colab에서-학습파일-생성하기)<br/>
+#### [ 3. 모델3 학습 | clear + neutral + ambiguous](#3-모델3-학습-|-clear-+-neutral-+-ambiguous) <br/>
+
+##### [3-1. Weight 파일 생성을 위한 기본설정](#31-Weight-파일-생성을-위한-기본설정)<br/>
+##### [3-2. Colab에서 학습파일 생성하기](#32-Colab에서-학습파일-생성하기)<br/>
+
 
 
 <br/><br/>
@@ -46,14 +50,21 @@
 
 <br/>
 
-# 2. Weight 파일 생성을 위한 기본설정
+# 2. 분류한 데이터별로 학습시키기
+- 모델1: clear 데이터로만 학습
+- 모델2: clear + neutral 데이터로 학습
+- **모델3: clear + neutral + ambiguous 데이터로 학습**
 
-## 2-a) 기본 파일 세팅
+
+# 3. 모델3 학습 | clear + neutral + ambiguous
+## 3-1. Weight 파일 생성을 위한 기본설정
+
+### A) 기본 파일 세팅
 1. 학습에 사용할 모든 이미지의 경로가 담긴 all_train.txt 생성
 2. 보다 정확한 학습을 위해 all_train.txt를 random하게 shuffle한 shuffled.txt 생성
 3. shuffled.txt를 weight파일 생성용(train.txt)과 확인용(validation.txt)으로 분류
 
-## 2-b) 학습 환경 세팅
+### B) 학습 환경 세팅
 1. `Colab Notebooks`에 `darknet-master` 배치
 
 2. `darknet-master/data/obj`에 학습에 사용할 이미지 배치 <br/>
@@ -95,13 +106,13 @@
 
 <br/>
 
-# 3. Colab에서 학습파일 생성하기
-### 3-a) 디렉토리 변경, darknet 접근 권한 부여
-### 3-b) darknet 빌드파일 생성
-### 3-c) cfg에 설정할 anchor값 구하기
-### 3-d) 커스텀 데이터에 맞춘 yolo tiny.conv.15 파일 생성
-### 3-e) 훈련 | weight 파일 생성
-### 3-f)  테스트 | validation 파일로 정확도 확인
+### 3-2. Colab에서 학습파일 생성하기
+#### A) 디렉토리 변경, darknet 접근 권한 부여
+#### B) darknet 빌드파일 생성
+#### C) cfg에 설정할 anchor값 구하기
+#### D) 커스텀 데이터에 맞춘 yolo tiny.conv.15 파일 생성
+#### E) 훈련 | weight 파일 생성
+#### F)  테스트 | validation 파일로 정확도 확인
 
 
 

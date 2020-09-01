@@ -55,6 +55,7 @@
 - 모델2: clear + neutral 데이터로 학습
 - **모델3: clear + neutral + ambiguous 데이터로 학습**
 
+<br/>
 
 # 3. 모델3 학습 | clear + neutral + ambiguous
 ## 3_1. Weight 파일 생성을 위한 기본설정

@@ -59,25 +59,25 @@
   - validation.txt | **2-a**에서 생성한 확인용 데이터 텍스트 파일<br/>
   
   - obj.names | 만들고자하는 weight 파일에서 분류할 class들의 이름<br/>
-    <details>
-	    <summary>보기</summary>	
-  </details>
+	    <details>
+		    <summary>보기</summary>	
+	  </details>
     
   - obj.data | <br/>
-   <details>
-	    <summary>보기</summary>  
-  </details>
+	   <details>
+		    <summary>보기</summary>  
+	  </details>
 
   - v3-all.cfg | 구축할 모델의 layer 세부설정 <br/>
-   <details>
-	    <summary>보기</summary>  
-	- line 1 [net layer] `max batches (반복횟수)`  : 사용할 class개수 * 2000
-	- line 1 [net layer] `steps` : max batches의 0.8배, max batches의 0.9배
-	- line 123, 167 [Convolutional layer] `filters` : (사용할 class개수 + 5) * 3
-	- line 132, 174 [yolo layer] `anchors` :  커스텀 데이터 맞춤 anchor로 설정 (추후 설명)
-	- line 132, 174 [yolo layer] `classes` : 사용할 class개수
-	
-  </details>
+	   <details>
+		    <summary>보기</summary>  
+		- line 1 [net layer] `max batches (반복횟수)`  : 사용할 class개수 * 2000
+		- line 1 [net layer] `steps` : max batches의 0.8배, max batches의 0.9배
+		- line 123, 167 [Convolutional layer] `filters` : (사용할 class개수 + 5) * 3
+		- line 132, 174 [yolo layer] `anchors` :  커스텀 데이터 맞춤 anchor로 설정 (추후 설명)
+		- line 132, 174 [yolo layer] `classes` : 사용할 class개수
+
+	  </details>
    <details>
 	    <summary>전체내용확인</summary>  
   </details>

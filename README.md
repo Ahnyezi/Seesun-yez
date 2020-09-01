@@ -78,9 +78,9 @@
 		- line 132, 174 [yolo layer] `classes` : 사용할 class개수
 
 	  </details>
-   <details>
-	    <summary>전체내용확인</summary>  
-  </details>
+	   <details>
+		    <summary>전체내용확인</summary>  
+	  </details>
 
 <br/>
 

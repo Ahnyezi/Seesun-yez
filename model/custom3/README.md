@@ -1,6 +1,4 @@
 # 3. 모델3 학습 | clear + neutral + ambiguous
-<br/>
-
 
 ## 목차
 

@@ -7,8 +7,6 @@
 
 ### 3. [모델3 학습 | clear + neutral + ambiguous](#3-모델3-학습---clear--neutral--ambiguous) <br/>
 
-#### 	3-1. [Weight 파일 생성을 위한 기본설정](#3_1-Weight-파일-생성을-위한-기본설정)<br/>
-#### 	3-2. [Colab에서 학습파일 생성하기](#3_2-Colab에서-학습파일-생성하기)<br/>
 
 
 

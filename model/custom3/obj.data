@@ -1,0 +1,5 @@
+classes = 4
+train = custom3/train.txt
+valid = custom3/validation.txt
+names = custom3/obj.names
+backup = backup/custom3

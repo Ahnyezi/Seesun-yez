@@ -25,15 +25,15 @@
 <br>
 
 ### `A) 데이터 수집`
-1.  [AI HUB | 인도보행 영상 데이터셋](#http://www.aihub.or.kr/aidata/136)<br/>
+1.  [**AI HUB | 인도보행 영상 데이터셋**](#http://www.aihub.or.kr/aidata/136)<br/>
 <img src = "https://user-images.githubusercontent.com/62331803/92255342-23a74700-ef0d-11ea-8af3-c494e689811e.png" width="70%"> <br/>
    - 이미지 예시 <br/>
    <img src = "https://user-images.githubusercontent.com/62331803/92255689-a7613380-ef0d-11ea-8992-5892a0e4d2bb.png" width="50%"> <br/>
 
-2.  [중국 횡단보도 이미지 | ImVisible 데이터셋 ](#https://github.com/samuelyu2002/ImVisible)<br/>
+2.  [**중국 횡단보도 이미지 | ImVisible 데이터셋** ](#https://github.com/samuelyu2002/ImVisible)<br/>
 <img src = "https://user-images.githubusercontent.com/62331803/92256060-2b1b2000-ef0e-11ea-8276-499e0285258a.png" width="70%"> <br/>
 
-3.  핸드폰으로 직접 촬영한 이미지
+3.  **핸드폰으로 직접 촬영한 이미지**
 <img src = "https://user-images.githubusercontent.com/62331803/92256313-89480300-ef0e-11ea-8b06-dc7292d33740.png" width="30%"> 
 
 <br/>
@@ -41,7 +41,7 @@
 ### `B) YOLO 커스텀 파일 생성을 위한 기본설정`
 <br/>
 
-##### > Weight 파일 생성을 위한 기본설정
+#### > Weight 파일 생성을 위한 기본설정
 
 > 기본 파일 세팅
 1. 학습에 사용할 모든 이미지의 경로가 담긴 all_train.txt 생성

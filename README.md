@@ -24,7 +24,7 @@
 ## 2 . 개발절차
 ### 2_1. 신호등/횡단보도 탐지 YOLO  커스텀 파일 생성
 
-#### A. 데이터 수집
+### A) 데이터 수집
 1.  [AI HUB | 인도보행 영상 데이터셋](#http://www.aihub.or.kr/aidata/136)<br/>
 <img src = "https://user-images.githubusercontent.com/62331803/92255342-23a74700-ef0d-11ea-8af3-c494e689811e.png" width="70%"> <br/>
    - 이미지 예시 <br/>
@@ -38,10 +38,12 @@
 
 <br/>
 
-#### B. YOLO 커스텀 파일 생성을 위한 기본설정
+### B) YOLO 커스텀 파일 생성을 위한 기본설정
+<br/>
+
 > Weight 파일 생성을 위한 기본설정
 
-#### > 기본 파일 세팅
+##### > 기본 파일 세팅
 1. 학습에 사용할 모든 이미지의 경로가 담긴 all_train.txt 생성
 2. 보다 정확한 학습을 위해 all_train.txt를 random하게 shuffle한 shuffled.txt 생성
 3. shuffled.txt를 weight파일 생성용(train.txt)과 확인용(validation.txt)으로 분류
@@ -97,7 +99,7 @@
 
 <br/>
 
-#### C. 신호등/횡단보도 YOLO 커스텀 파일 학습시키기
+### C) 신호등/횡단보도 YOLO 커스텀 파일 학습시키기
 
 > **1,2차시도 | custom1,2** <br/>
 #### > 학습계획

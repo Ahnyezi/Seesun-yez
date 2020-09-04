@@ -6,6 +6,9 @@
 
 #### 2. 개발절차
 ##### 2-1)  [신호등/횡단보도 탐지 YOLO  커스텀 파일 생성](#2-1--신호등횡단보도-탐지-YOLO--커스텀-파일-생성)
+###### A. [신호등/횡단보도 데이터 수집](#A--신호등횡단보도-데이터-수집)
+###### B. [YOLO 커스텀 파일 생성을 위한 기본설정](#B--YOLO-커스텀-파일-생성을-위한-기본설정)
+###### C. [신호등/횡단보도 YOLO 커스텀 파일 학습시키기](#C--신호등횡단보도-YOLO-커스텀-파일-학습시키기)
 ##### 2-2)  Android로 YOLO 돌리기
 ##### 2-3)  TTS(Text To Speech)로 음성안내
 ##### 2-4)  횡단보도 방향 탐지
@@ -30,7 +33,7 @@
 2.  [중국 횡단보도 이미지 | ImVisible 데이터셋 ](#https://github.com/samuelyu2002/ImVisible)<br/>
 <img src = "https://user-images.githubusercontent.com/62331803/92256060-2b1b2000-ef0e-11ea-8276-499e0285258a.png" width="70%"> <br/>
 
-3.  핸드폰으로 직접 촬영한 이미지<br/>
+3.  핸드폰으로 직접 촬영한 이미지
 <img src = "https://user-images.githubusercontent.com/62331803/92256313-89480300-ef0e-11ea-8b06-dc7292d33740.png" width="30%"> 
 
 <br/>
@@ -51,26 +54,26 @@
 <img src="https://user-images.githubusercontent.com/62331803/91841952-21838500-ec8e-11ea-8d7a-880b441f3c4c.png" width="20%"> <br/>
 
 3. `darknet-master/`에 폴더 `custom` 생성
-  -  yolov3-tiny.weights | yolo pre-trained weight 파일<br/>
-     - 다운경로: https://pjreddie.com/darknet/yolo/
+    -  yolov3-tiny.weights | yolo pre-trained weight 파일<br/>
+       - 다운경로: https://pjreddie.com/darknet/yolo/
 
-- yolov3-tiny.conv.15 | 커스텀 데이터 맞춤 yolo pre-trained tiny 모델 (추후 설명)
+    - yolov3-tiny.conv.15 | 커스텀 데이터 맞춤 yolo pre-trained tiny 모델 (추후 설명)
  
-- train.txt | **2-a**에서 생성한 훈련용 데이터 텍스트 파일<br/>
+    - train.txt | **2-a**에서 생성한 훈련용 데이터 텍스트 파일<br/>
 
-- validation.txt | **2-a**에서 생성한 확인용 데이터 텍스트 파일<br/>
+    - validation.txt | **2-a**에서 생성한 확인용 데이터 텍스트 파일<br/>
 
-- obj.names | 만들고자하는 weight 파일에서 분류할 class들의 이름<br/>
-    <details>
-	    <summary>보기</summary>	
-  </details>
+    - obj.names | 만들고자하는 weight 파일에서 분류할 class들의 이름<br/>
+	    <details>
+		    <summary>보기</summary>	
+	  </details>
 
-- obj.data | <br/>
-   <details>
-	    <summary>보기</summary>  
-  </details>
+    - obj.data | <br/>
+	   <details>
+		    <summary>보기</summary>  
+	  </details>
 
-- v3-all.cfg | 구축할 모델의 layer 세부설정 <br/>
+    - v3-all.cfg | 구축할 모델의 layer 세부설정 <br/>
 
 	- line 1 [net layer] `max batches (반복횟수)`  : 사용할 class개수 * 2000
 	- line 1 [net layer] `steps` : max batches의 0.8배, max batches의 0.9배
@@ -78,9 +81,9 @@
 	- line 132, 174 [yolo layer] `anchors` :  커스텀 데이터 맞춤 anchor로 설정 (추후 설명)
 	- line 132, 174 [yolo layer] `classes` : 사용할 class개수
 
-   <details>
-	    <summary>전체내용확인</summary>  
-  </details>
+	   <details>
+		    <summary>전체내용확인</summary>  
+	  </details>
 
 <br/>
 
@@ -96,7 +99,7 @@
 
 #### C. 신호등/횡단보도 YOLO 커스텀 파일 학습시키기
 
-> 1,2차시도 | custom1,2 <br/>
+> **1,2차시도 | custom1,2** <br/>
 #### > 학습계획
 - 각 데이터를 정제없이 사용하여, 신호등과 횡단보도 yolo 모델을 각각 생성
   - 신호등 데이터: 인도보행영상의 Bbox_1, Bbox_2, Bbox_3, Bbox_4
@@ -128,7 +131,7 @@
 
 <br/>
 
-> 3차시도  | custom3 <br/>
+> **3차시도  | custom3** <br/>
 #### > 학습 계획
 - **횡단보도와 신호등을 한번에 detect**할 수 있는 모델을 생성
    - detect할 객체(class) 종류: cross walk(0), red light(1), green light(2), black(3)
@@ -175,8 +178,8 @@
 
 <br/>
 
-> 4,5차시도 | custom4 ,5 <br/>
+> **4,5차시도 | custom4 ,5** <br/>
 #### > 학습 계획
 
-> 6차시도 | 
+> **6차시도 | **
 

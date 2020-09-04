@@ -22,7 +22,6 @@
 
 ## 2 . 개발절차
 ### 2_1. 신호등/횡단보도 탐지 YOLO  커스텀 파일 생성
-<br>
 
 ### `A) 데이터 수집`
 1.  [**AI HUB | 인도보행 영상 데이터셋**](#http://www.aihub.or.kr/aidata/136)<br/>
@@ -39,7 +38,6 @@
 <br/>
 
 ### `B) YOLO 커스텀 파일 생성을 위한 기본설정`
-<br/>
 
 #### > Weight 파일 생성을 위한 기본설정
 
@@ -76,12 +74,11 @@
 	  </details>
 
     - v3-all.cfg | 구축할 모델의 layer 세부설정 <br/>
-
-	- line 1 [net layer] `max batches (반복횟수)`  : 사용할 class개수 * 2000
-	- line 1 [net layer] `steps` : max batches의 0.8배, max batches의 0.9배
-	- line 123, 167 [Convolutional layer] `filters` : (사용할 class개수 + 5) * 3
-	- line 132, 174 [yolo layer] `anchors` :  커스텀 데이터 맞춤 anchor로 설정 (추후 설명)
-	- line 132, 174 [yolo layer] `classes` : 사용할 class개수
+      - line 1 [net layer] `max batches (반복횟수)`  : 사용할 class개수 * 2000
+      - line 1 [net layer] `steps` : max batches의 0.8배, max batches의 0.9배
+      - line 123, 167 [Convolutional layer] `filters` : (사용할 class개수 + 5) * 3
+      - line 132, 174 [yolo layer] `anchors` :  커스텀 데이터 맞춤 anchor로 설정 (추후 설명)
+      - line 132, 174 [yolo layer] `classes` : 사용할 class개수
 
 	   <details>
 		    <summary>전체내용확인</summary>  
